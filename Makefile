@@ -125,13 +125,5 @@ clean:
 
 # Archive targets
 zip:
-	zip -r code.zip README.md Makefile *.cpp *.h LICENSE CAModel/
-	mv code.zip $$(date +%b_%d_%Y_%H%M).zip
-
-	# prelim_archive:
-	# 	@if [ ! -d $(ARCHIVEDIR) ]; then mkdir -p $(ARCHIVEDIR); fi
-	#
-	#
-	# tar: prelim_archive
-	# 	tar --ignore-failed-read -czf whidm_latest.tar Makefile *.cpp *.h whidm/*
-	# 	mv whidm_latest.tar $(ARCHIVEDIR)/$$(date +%b_%d_%Y_%H%M).tar
+	zip -r code.zip README.md Makefile main.cpp LICENSE CAModel/
+	mv code.zip camodel_$$(date +%Y_%m_%d).zip
