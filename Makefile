@@ -126,4 +126,4 @@ clean:
 # Archive targets
 zip:
 	zip -r code.zip README.md Makefile main.cpp LICENSE CAModel/
-	mv code.zip camodel_$$(date +%Y_%m_%d).zip
+	mv code.zip camodel_code_$$(date +%Y_%m_%d).zip
